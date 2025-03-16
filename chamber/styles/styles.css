@@ -1,0 +1,198 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #004b8d;
+    color: white;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+}
+.logo img {
+    height: 50px;
+}
+
+.weather{
+    display: flex;
+    gap: 5px;
+}
+
+.chamtext{
+    font-size: 12px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eef2f3;
+    background-image: url("../images/hero.jpeg");
+    height: 250px;
+    background-size: cover;
+}
+
+.cta {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+main {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.events, .weather {
+    flex: 1;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.business-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.business-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.business-card img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.weather img{
+    width: 50px;
+    height: 50px;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #004b8d;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-info, .project-info {
+    margin-bottom: 10px;
+}
+
+.contact-info{
+    text-align: left;
+
+}
+
+.contact-info a {
+    color: white;
+}
+
+.project-info{
+    text-align: right;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: black;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    nav.active ul {
+        display: flex;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

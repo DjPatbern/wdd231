@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Tech Solutions Inc.",
+      "address": "123 Innovation Drive, Uyo",
+      "phone": "(223) 555-1001",
+      "website": "https://techsolutions.com",
+      "image": "bus3.webp",
+      "membership": 3,
+      "description": "Leading provider of IT solutions and cybersecurity services."
+    },
+    {
+      "name": "Green Energy Co.",
+      "address": "45 Solar Street, Uyo",
+      "phone": "(223) 555-2002",
+      "website": "https://greenenergy.com",
+      "image": "bus2.jpg",
+      "membership": 2,
+      "description": "Pioneering renewable energy solutions for businesses."
+    },
+    {
+      "name": "Uyo Logistics",
+      "address": "78 Cargo Lane, Uyo",
+      "phone": "(223) 555-3003",
+      "website": "https://uyologistics.com",
+      "image": "bus1.jpeg",
+      "membership": 1,
+      "description": "Reliable freight and logistics services across Africa."
+    },
+    {
+      "name": "AquaPure Water",
+      "address": "56 Blue Wave Ave, Uyo",
+      "phone": "(223) 555-4004",
+      "website": "https://aquapure.com",
+      "image": "bus2.jpg",
+      "membership": 3,
+      "description": "Supplier of purified and bottled drinking water."
+    },
+    {
+      "name": "BuildRight Construction",
+      "address": "98 Skyline Towers, Uyo",
+      "phone": "(223) 555-5005",
+      "website": "https://buildright.com",
+      "image": "bus3.webp",
+      "membership": 2,
+      "description": "Specialists in modern construction and architectural design."
+    },
+    {
+      "name": "Healthy Living Pharmacy",
+      "address": "14 Wellness Plaza, Uyo",
+      "phone": "(223) 555-6006",
+      "website": "https://healthyliving.com",
+      "image": "bus1.jpeg",
+      "membership": 1,
+      "description": "Trusted pharmacy providing healthcare solutions."
+    },
+    {
+      "name": "FastNet Broadband",
+      "address": "23 Fiber Optic Road, Uyo",
+      "phone": "(223) 555-7007",
+      "website": "https://fastnet.com",
+      "image": "bus2.jpg",
+      "membership": 3,
+      "description": "High-speed internet provider with nationwide coverage."
+    }
+  ]
+  

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Victor B. Patrick">
+    <title>Uyo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.webp" alt="Uyo Chamber of Commerce Logo" />
+        <div>
+          <p>Uyo</p>
+          <p class="chamtext">Chamber of Commerce</p>
+        </div>
+      </div>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="#">Discover</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero">
+      <!-- <div class="hero-image"><img src="images/hero.jpeg" alt="Hero Image"></div> -->
+      <button class="cta">Keynote Tickets</button>
+    </section>
+    <main>
+      <h1>Home</h1>
+      <div class="content">
+        <div class="events">Upcoming Events</div>
+        <div class="weather">
+          <div class="current-weather">Current Weather</div>
+          <div class="weather">
+            <img src="images/weather.webp" alt="weather Logo" />
+            <div class="forecast">
+              <p>75°F</p>
+              <p>Partly Cloudy</p>
+              <p>High: 85°</p>
+              <p>Low: 52°</p>
+              <p>Humidity: 34%</p>
+              <p>Sunrise: 7:30am</p>
+              <p>Sunset: 9:59pm</p>
+            </div>
+          </div>
+        </div>
+        <div class="weather">
+          <div class="current-weather">Weather Forecast</div>
+          <div class="forecast">
+            <p>Today: 90°F</p>
+            <p>Wednesday: 89°F</p>
+            <p>Thursday: 68°F</p>
+          </div>
+        </div>
+      </div>
+      <div class="business-listings">
+        <div class="business-card">
+          <img src="images/bus1.jpeg" alt="Business Logo" />
+          <p class="business-name">Business Name</p>
+          <p>Email: <a href="mailto:info@gmail.com">info@gmail.com</a></p>
+          <p>Phone: <a href="tel:8005551234">800-555-1234</a></p>
+          <p>
+            URL:
+            <a href="http://mybusiness.com" target="_blank">mybusiness.com</a>
+          </p>
+        </div>
+        <div class="business-card">
+          <img src="images/bus2.jpg" alt="Business Logo" />
+          <p class="business-name">Business Name</p>
+          <p>Email: <a href="mailto:info@gmail.com">info@gmail.com</a></p>
+          <p>Phone: <a href="tel:8005551234">800-555-1234</a></p>
+          <p>
+            URL:
+            <a href="http://mybusiness.com" target="_blank">mybusiness.com</a>
+          </p>
+        </div>
+        <div class="business-card">
+          <img src="images/bus3.webp" alt="Business Logo" />
+          <p class="business-name">Business Name</p>
+          <p>Email: <a href="mailto:info@gmail.com">info@gmail.com</a></p>
+          <p>Phone: <a href="tel:8005551234">800-555-1234</a></p>
+          <p>
+            URL:
+            <a href="http://mybusiness.com" target="_blank">mybusiness.com</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <p><strong>Uyo Chamber of Commerce</strong></p>
+                <p>10 Rue De La Paix</p>
+                <p>Uyo, Mali 999</p>
+                <p>Email: <a href="mailto:info@Uyocc.org">info@Uyocc.org</a></p>
+                <p>Phone: <a href="tel:2235552300">(223) 555-2300</a></p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="images/Frame29723.svg" alt="Facebook" /></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter" /></a>
+                <a href="#"><img src="images/linkin.svg" alt="LinkedIn" /></a>
+            </div>
+            <div class="project-info">
+                <p>WDD231 Class Project</p>
+                <p>Uyo Chamber of Commerce</p>
+                <p>&copy; <span id="year"></span> Victor Bernard Patrick</p>
+        <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+    
+  </body>
+</html>
