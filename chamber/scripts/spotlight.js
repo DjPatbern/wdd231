@@ -8,7 +8,16 @@ document.addEventListener("DOMContentLoaded", async () => {
       const filteredBusiness = business.filter(
         (bus) => bus.membership === 2 || bus.membership === 3
       );
-      displayBusiness(filteredBusiness);
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        }
+        return array;
+      }
+      const shuffledBusiness = shuffleArray(filteredBusiness);
+      const selectedBusinesses = shuffledBusiness.slice(0, 3);
+      displayBusiness(selectedBusinesses);
     } catch (error) {
       console.error("Error fetching member data:", error);
     }
@@ -18,7 +27,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     businessCards.innerHTML = `
           <div class="business-listings">
            ${business
-             .slice(0, 3)
              .map(
                (bus, index) => `
                       <div class="business-card">
