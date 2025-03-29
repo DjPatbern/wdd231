@@ -121,3 +121,57 @@ document.addEventListener("DOMContentLoaded", () => {
   displayCourses();
   populateCourseWork();
 });
+
+
+const courseDetails = document.getElementById("course-details");
+
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = `
+    <div class="modal-content">
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    </div>
+  `;
+  
+  courseDetails.showModal();
+
+  document.getElementById("closeModal").addEventListener("click", () => {
+    courseDetails.close();
+  });
+
+  courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+      courseDetails.close();
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("course-container");
+  if (!container) return;
+  
+  container.innerHTML = "";
+  
+  courses.forEach((course) => {
+    const courseDiv = document.createElement("div");
+    courseDiv.classList.add("course-card");
+    if (course.completed) courseDiv.classList.add("completed");
+
+    courseDiv.innerHTML = `
+      <h3>${course.subject} ${course.number}</h3>
+      <p>${course.title}</p>
+      <p>Credits: ${course.credits}</p>
+    `;
+    
+    courseDiv.addEventListener("click", () => {
+      displayCourseDetails(course);
+    });
+    
+    container.appendChild(courseDiv);
+  });
+});

@@ -1,0 +1,108 @@
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form-member{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+    justify-content: space-between;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-direction: column;
+
+}
+.card {
+    background: #007BFF;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 calc(50% - 10px);
+    margin: 5px;
+    transition: transform 0.3s ease-in-out, opacity 1s;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+.card a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: auto;  
+    border-radius: 10px; 
+    margin-top: 5px;
+    cursor: pointer;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.card:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 600px) {
+    .form-member {
+        flex-direction: column;
+    }
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+.modal button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+}
