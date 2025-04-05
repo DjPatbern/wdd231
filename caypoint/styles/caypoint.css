@@ -1,0 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+
+  header nav a:hover {
+    color: #28a745;
+  }
+
+  .hero {
+    background-color: #28a745;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+  }
+
+  .content {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .content p, li {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 28px;
+    }
+
+    header nav {
+      flex-direction: column;
+    }
+
+    header nav a {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      padding: 20px;
+    }
+
+    .content h2 {
+      font-size: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+    }
+
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu a {
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .hamburger.active + .menu {
+      display: flex;
+    }
+  }
