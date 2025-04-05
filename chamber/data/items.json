@@ -1,0 +1,51 @@
+[
+    {
+      "title": "Unity Park",
+      "image": "images/unity.webp",
+      "address": "Peace Lane, Uyo",
+      "description": "A serene park perfect for relaxation and family outings."
+    },
+    {
+      "title": "Ibom Tropicana",
+      "image": "images/tropicana.webp",
+      "address": "Ibom Blvd, Uyo",
+      "description": "Entertainment and shopping center with cinemas, restaurants, and more."
+    },
+    {
+        "title": "Golf Resort",
+        "image": "images/golf.webp",
+        "address": "Mbiakong, Uyo",
+        "description": "Offering an outdoor pool and a spa with wellness center, Ibom Hotel andamp"
+      },
+      {
+        "title": "Ibom Air",
+        "image": "images/ibomair.webp",
+        "address": "Victor Attah International Airport,Uyo",
+        "description": "Ibom Air is a Nigerian airline owned by the Akwa Ibom State Government. The airline flies domestically and regionally"
+      },
+      {
+        "title": "Ibom Metropolitan Polytechnic",
+        "image": "images/metropolitan.webp",
+        "address": "IBB Way, Uyo",
+        "description": "Ibom Metropolitan Polytechnic was established in the year 2021 with the vision of providing high-quality technical and vocational education."
+      },
+      {
+        "title": "Godswill Akpabio International Stadium",
+        "image": "images/stadium.webp",
+        "address": "Stadium Road, Uyo",
+        "description": "The Godswill Akpabio International Stadium is a 30,000 capacity national sports stadium"
+      },
+      {
+          "title": "Watbridge Hotels & Suites",
+          "image": "images/watbridge.webp",
+          "address": "1 A/B IBB Ave, Uyo",
+          "description": "If Social Distancing Means Spacing, experience, Watbridge Hotels and Suites is a leading hospitality and events outfit"
+        },
+        {
+          "title": "International Christian Worship Center",
+          "image": "images/worship.webp",
+          "address": "Udo Udoma Avenue, Uyo",
+          "description": "With distinctive architectural features and situated on a 9.5 hectares land, the International Worship Centre in Uyo"
+        }
+  ]
+  

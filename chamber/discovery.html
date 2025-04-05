@@ -12,19 +12,19 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Uyo Chamber of Commerce" />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://victorpatrick.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvictor.ad8835c4.jpeg&w=640&q=75" />
-    <meta property="og:url" content="https://djpatbern.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:url" content="https://djpatbern.github.io/wdd231/chamber/discovery.html" />
     <title>Uyo Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/directory.css" />
+    <link rel="stylesheet" href="styles/discovery.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/discovery.js" defer></script>
   </head>
   <body>
     <header>
@@ -45,19 +45,14 @@
         </ul>
       </nav>
     </header>
+    <main class="discover-container">
+        <aside class="visitor-message" id="visitor-message"></aside>
+        <section class="discover-grid" id="discover-cards">
+          <!-- Cards will be loaded here via JS -->
+        </section>
+      </main>
+      
 
-    <main>
-      <h1>Directory</h1>
-      <div class="toggle-container">
-        <button id="gridViewBtn" class="toggle-btn">
-          <img src="images/grid.png" alt="Grid View" />
-        </button>
-        <button id="listViewBtn" class="toggle-btn active">
-          <img src="images/list.png" alt="List View" />
-        </button>
-      </div>
-      <div id="members-container" class="list-view"></div>
-    </main>
 
     <footer>
       <div class="footer-content">
