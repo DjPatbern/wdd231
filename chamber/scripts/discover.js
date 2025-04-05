@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
           card.className = "card";
           card.className = `card card${index + 1}`;  
           card.innerHTML = `
-            <h2>${item.title}</h2>
+            <h1>${item.title}</h1>
             <figure>
               <img src="${item.image}" alt="${item.title}" width="300" height="200" loading="lazy" />
             </figure>
