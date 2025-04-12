@@ -75,7 +75,7 @@ tr:nth-child(even) {
 
 .pagination button:disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+background-color: black;
 }
 
 /* Loading Spinner */
@@ -153,5 +153,11 @@ tr:nth-child(even) {
   
   .modal-content span {
     font-weight: bold;
+  }
+
+  select{
+    padding: 5px;
+    outline: none;
+    border: none;
   }
 
