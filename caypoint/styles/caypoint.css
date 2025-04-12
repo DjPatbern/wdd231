@@ -4,9 +4,16 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
   }
-
+  
   header {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s ease-out forwards;
     background-color: #007bff; /* Blue */
     color: #fff;
     padding: 10px;
@@ -15,58 +22,156 @@ body {
     justify-content: space-between;
   }
 
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+
   header h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
     font-weight: bold;
   }
 
-  header nav {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-
-  header nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-  }
 
   header nav a:hover {
     color: #28a745;
   }
-
-  .hero {
-    background-color: #28a745;
+  nav {
+    background-color: #004080;
     color: #fff;
-    padding: 40px 20px;
+    padding: 1rem;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  nav a {
+    color: #d3f0fc;
+    text-decoration: none;
+    margin: 0 10px;
   }
 
-  .hero h2 {
+  .logo{
+    background-color: white;
+    color: #004080;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    background-color: #f5f5f5;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 28px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .hero-text p {
+    font-size: 1rem;
+    color: #666;
   }
 
-  .content {
-    margin: 20px;
-    text-align: center;
+  main {
+    padding: 20px;
   }
 
-  .content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-  }
+  /* Feedback Form */
+.feedback {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-top: 2rem;
+}
 
-  .content p, li {
-    font-size: 18px;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
-  }
+.feedback h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
 
+.feedback form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.feedback label {
+  margin: 0.5rem 0 0.2rem;
+  font-weight: bold;
+}
+
+.feedback input,
+.feedback textarea {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.feedback button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background-color: #0056b3;
+}
+
+/* Confirmation Page */
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+}
+
+.confirmation h1 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+
+  
   footer {
     background-color: #333;
     color: #fff;
@@ -88,13 +193,7 @@ body {
   }
 
   @media screen and (max-width: 768px) {
-    header h1 {
-      font-size: 28px;
-    }
-
-    header nav {
-      flex-direction: column;
-    }
+  
 
     header nav a {
       margin: 10px 0;
@@ -117,7 +216,6 @@ body {
     .hamburger {
       display: block;
       font-size: 24px;
-      background-color: #007bff;
       color: white;
       padding: 10px;
       cursor: pointer;

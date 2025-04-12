@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor B. Patrick" />
+  <meta
+    name="description"
+    content="Cay-Point Hospitals page"
+  />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <title>Cay-Point - Hospitals</title>
+  <meta property="og:title" content="Cay-Point - Hospitals" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://victorpatrick.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvictor.ad8835c4.jpeg&w=640&q=75" />
+  <meta property="og:url" content="https://djpatbern.github.io/wdd231/caypoint/index.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/caypoint.css">
+  <link rel="stylesheet" href="styles/hospitals.css">
+  <script src="scripts/caypoint.js" defer></script>
+  <script src="scripts/hospitals.js" defer></script>
+</head>
+<body>
+
+  <header>
+  
+    <nav >
+      <div>
+        <a href="index.html" class="logo">CayPoint</a>
+      </div>
+      <div class="hamburger">&#9776;</div>
+      <div class="menu">
+
+        <a href="index.html">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+        <a href="#">Clinics</a>
+        <a href="#">Gyms</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Hospitals</h1>
+    <a href="index.html" class="back">← Go Back</a>
+
+    <input type="text" id="search" placeholder="Search by name, type or state" />
+
+    <div id="loading" class="loading"></div>
+
+    <div class="table-container">
+      <table id="hospitalsTable">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>State</th>
+            <th>Type</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <dialog id="hospital-details"></dialog>
+
+    <div id="pagination" class="pagination">
+      <button id="prevPage">Previous</button>
+      <span id="pageInfo"></span>
+      <button id="nextPage">Next</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cay-Point</p>
+    <p><a href="mailto:info@caypoint.com">Contact Us</a></p>
+  </footer>
+
+ 
+</body>
+</html>

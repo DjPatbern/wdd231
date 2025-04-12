@@ -1,61 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Victor B. Patrick" />
+  <meta
+    name="description"
+    content="Cay-Point - Locate The Health Center, Closest To You"
+  />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <title>Cay-Point - Healthcare and Fitness Directory</title>
+  <meta property="og:title" content="Cay-Point - Healthcare and Fitness Directory" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://victorpatrick.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fvictor.ad8835c4.jpeg&w=640&q=75" />
+  <meta property="og:url" content="https://djpatbern.github.io/wdd231/caypoint/index.html" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/caypoint.css">
   <script src="scripts/caypoint.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+
 </head>
 <body>
 
   <header>
-    <h1>Cay-Point</h1>
-    <div class="hamburger">&#9776;</div>
-    <nav class="menu">
-      <a href="#">Home</a>
-      <a href="#">Hospitals</a>
-      <a href="#">Clinics</a>
-      <a href="#">Gyms</a>
+  
+    <nav >
+      <div>
+        <a href="index.html" class="logo">CayPoint</a>
+      </div>
+      <div class="hamburger">&#9776;</div>
+      <div class="menu">
+
+        <a href="index.html">Home</a>
+        <a href="hospitals.html">Hospitals</a>
+        <a href="#">Clinics</a>
+        <a href="#">Gyms</a>
+      </div>
     </nav>
   </header>
 
-  <div class="hero">
-    <h2>Find Healthcare & Fitness Facilities in Nigeria</h2>
-    <p>Your one-stop directory for hospitals, clinics, and gyms.</p>
-  </div>
+  <main>
+    <section class="hero">
+      <img src="images/womanhero.webp" alt="Health Center" loading="lazy" class="hero-image" />
+      <div class="hero-text">
+        <h1>Locate The Health Center, Closest To You</h1>
+        <p>
+          Are you a patient struggling to find a good hospital to get treatment?
+          Or perhaps you are new in a location and can not find a hospital for checkups?
+          <br />
+          <br />
+          Welcome to CayPoint, the game-changer in the world of Health Care.
+        </p>
+      </div>
+    </section>
+      <!-- Feedback Form -->
+      <section class="feedback">
+        <h2>We Value Your Feedback</h2>
+        <form id="feedbackForm">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+  
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+  
+          <label for="hospital">Hospital for Feedback Reference:</label>
+          <input type="text" id="hospital" name="hospital" required />
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <button type="submit">Send Feedback</button>
+        </form>
+      </section>
 
-  <div class="content">
-    <h2>1. Site Name</h2>
-    <p><strong>Cay-Point</strong> was chosen as the site name because it combines the idea of a central “point” for health and fitness with a unique, catchy name that is easy to remember and brandable.</p>
-
-    <h2>2. Site Purpose</h2>
-    <p>
-      Cay-Point is a directory website focused on listing hospitals, clinics, and gyms across Nigeria. The site provides contact details such as names, locations, phone numbers, and email addresses, making it easy for users to find the healthcare and fitness facilities they need.
-    </p>
-
-    <h2>3. Scenarios</h2>
-    <ul>
-      <li><strong>Scenario 1:</strong> How do I find a nearby hospital?</li>
-      <li><strong>Scenario 2:</strong> How do I contact a clinic?</li>
-    </ul>
-
-    <h2>4. Color Schema</h2>
-    <ul>
-      <li><strong>Blue (#007bff):</strong> Used for the header background and mobile menu button, symbolizing trust and health.</li>
-      <li><strong>Green (#28a745):</strong> Used in the hero section and link hover state to represent wellness and vitality.</li>
-    </ul>
-
-    <h2>5. Typography</h2>
-    <ul>
-      <li><strong>Open Sans:</strong> Used for headings for a clean, modern look.</li>
-      <li><strong>Roboto:</strong> Used for body text for readability and simplicity.</li>
-    </ul>
-
-    <h2>6. Wireframe</h2>
-    <p>View the wireframes here: <a href="https://app.moqups.com/IwJFccHUZwYNXXc44RNcKlLdFZWavFqd/view/page/ad64222d5" target="_blank">Cay-Point Wireframes</a></p>
-  </div>
+  </main>
 
   <footer>
     <p>&copy; 2025 Cay-Point</p>
